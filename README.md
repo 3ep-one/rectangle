@@ -8,8 +8,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Require GO 1.6+
-Require Redis 5.0.6+
+Require(  
+  GO 1.6+  
+  Redis 5.0.6+   
+  HTTPie(for test)  
+        )  
+
 
 
 
