@@ -59,7 +59,6 @@ func Setkeyvalue(client *redis.Client, rectangleList []string) {
 //Getkeyvalue get key-value from redis
 func Getkeyvalue(client *redis.Client) (rectangleList []string) {
 	keyID, err := client.Get("id").Result()
-	log.Println(keyID)
 	if err != nil {
 		panic(err)
 	}
@@ -76,4 +75,9 @@ func Getkeyvalue(client *redis.Client) (rectangleList []string) {
 	}
 	return rectangleList
 
+}
+
+//Closeredisclient close redis connection
+func Closeredisclient(client *redis.Client) {
+	client.Close()
 }

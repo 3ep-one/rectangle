@@ -49,4 +49,5 @@ func Haveoverlap(jsoninput Jsoninput) {
 	}
 	redisClient := rediswraper.Makeredisclient()
 	rediswraper.Setkeyvalue(redisClient, ans)
+	rediswraper.Closeredisclient(redisClient)
 }

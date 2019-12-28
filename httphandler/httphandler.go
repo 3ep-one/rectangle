@@ -1,7 +1,6 @@
 package httphandler
 
 import (
-	// "bytes"
 	"encoding/json"
 	"io/ioutil"
 	"log"
@@ -17,6 +16,7 @@ func get(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusCreated)
 	redisClient := rediswraper.Makeredisclient()
 	rectList := rediswraper.Getkeyvalue(redisClient)
+	rediswraper.Closeredisclient(redisClient)
 	var rectClean []rectanglesolver.Rectangle
 	for _, rect := range rectList {
 		var ans rectanglesolver.Rectangle
