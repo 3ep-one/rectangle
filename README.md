@@ -16,17 +16,20 @@ Require Redis 5.0.6+
 ### Installing
 
 installed with:
-
+'''
 go get -v github.com/3ep-one/rectangle
-
+'''
 
 ## Running the tests
 
-You can run test using HTTPie:\n
+You can run test using HTTPie:
+'''
   http POST http://127.0.0.1:8080 <inp.json
-and then get response using :\n
+'''
+and then get response using :
+'''
   http Get http://127.0.0.1:8080
-
+'''
 
 
 ### And coding style tests
@@ -35,9 +38,12 @@ All code linted by flake8.
 
 ## Deployment
 You should first set configs.
+You can start program by:
+'''
+  go run $GOPATH/src/github.com/3ep-one/rectangle/main.go 
+'''
 
-
-After running the urlshortener you can send POST request JSON(exp. inp.json) and recive JSON answers by GET request.
+After running the program you can send POST request JSON(exp. inp.json) and recive JSON answers by GET request.
 All accepted values are stored in Redis database.
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
