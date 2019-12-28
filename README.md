@@ -22,9 +22,9 @@ go get -v github.com/3ep-one/rectangle
 
 ## Running the tests
 
-You can run test using httpie:
+You can run test using HTTPie:\n
   http POST http://127.0.0.1:8080 <inp.json
-and then get response using :
+and then get response using :\n
   http Get http://127.0.0.1:8080
 
 
