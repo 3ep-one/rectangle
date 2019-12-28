@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/my/repo/rediswraper"
+	"github.com/3ep-one/rectangle/rediswraper"
 )
 
 //Rectangle contain dimenstions and creation time

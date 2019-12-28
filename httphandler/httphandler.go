@@ -7,9 +7,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/gorilla/mux"
 	"github.com/3ep-one/rectangle/rectanglesolver"
 	"github.com/3ep-one/rectangle/rediswraper"
+	"github.com/gorilla/mux"
 )
 
 func get(w http.ResponseWriter, r *http.Request) {
